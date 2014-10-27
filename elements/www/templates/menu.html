@@ -1,0 +1,45 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-dark nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <div style="background-color: #303739;height: 200px;width: 320px;z-index: -1;">
+
+     <div style="position: relative;top: 50px;left: 100px"> <img ng-src="{{eleUser.photoid}}"> </div>
+    <div style="background-color: transparent; height: 80px;width: 80px;z-index:1; top: 124px; left: 100px;position: relative;">User Name</div>
+    </div>
+    <ion-content class="has-header" style="background-color: #303739;">
+      <ion-list>
+        <ion-item nav-clear menu-close style="align-content: center" href="#/app/welcome">
+            <div style="background-color:Red;width: 10px;height: 50px;text-align:center">Welcome</div>
+
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/Profile">
+            <div style="background-color:#a6cdd1;width: 10px;height: 50px;text-align:center">Profile</div>
+
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/Living Sober">
+            <div style="background-color:mediumpurple;width: 10px;height: 50px;text-align:center">Living Sober</div>
+
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/SocialCommunity">
+            <div style="background-color:yellowgreen;width: 10px;height: 50px;text-align:center">Resources</div>
+
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/Education">
+            <div style="background-color:rosybrown;width: 10px;height: 50px;text-align:center">Healthy Living</div>
+
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/Settings">
+            <div style="background-color:#535353;width: 10px;height: 50px;text-align:center">Settings</div>
+
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
